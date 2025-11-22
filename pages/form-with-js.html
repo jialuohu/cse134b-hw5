@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form-with-js.css">
+    <link crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <title>Contact Form with JavaScript</title>
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">
+            <i class="fa-regular fa-moon"></i>
+        </span>
+    </button>
+    <div class="container">
+        <form action="http://httpbin.org/post" method="post" id="contact-form" novalidate>
+            <input type="hidden" name="possible_bot" value="true">
+            <input type="hidden" name="form-errors" id="form-errors-field" value="">
+            <div class="form-container">
+                <h1>Contact Form</h1>
+                <div class="form-field name">
+                    <label for="name">Name <span class="required-indicator" aria-label="required">*</span></label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        required
+                        minlength="3"
+                        maxlength="100"
+                        pattern="[A-Z][A-Za-z\s\-']*"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        aria-required="true"
+                        data-pattern-message="Name must start with an uppercase letter and contain only letters, spaces, hyphens, and apostrophes">
+                </div>
+
+                <div class="form-field email">
+                    <label for="email">Email <span class="required-indicator" aria-label="required">*</span></label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        maxlength="50"
+                        placeholder="your.email@example.com"
+                        autocomplete="email"
+                        aria-required="true">
+                </div>
+
+                <div class="form-field comments">
+                    <label for="comments">Comments</label>
+                    <textarea
+                        name="comments"
+                        id="comments"
+                        maxlength="1000"
+                        placeholder="Share your thoughts or questions (optional)"
+                        rows="5"></textarea>
+                    <div class="char-counter" id="char-counter">
+                        <span id="char-count">0</span> / 1000 characters
+                    </div>
+                </div>
+                <div class="output-container">
+                    <output name="error-message" id="error-message" aria-live="polite"></output>
+                    <output name="info-message" id="info-message" aria-live="polite"></output>
+                </div>
+                <div class="form-field submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="../js/form-validation.js"></script>
+    <script src="../js/theme-toggle.js"></script>
+</body>
+</html>

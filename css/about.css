@@ -1,0 +1,58 @@
+@import "layout.css";
+
+.main {
+    max-width: var(--layout-max-width);
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: "Fugaz One", "Poppins", sans-serif;
+        color: var(--quinary-color);
+
+        img {
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    .intro {
+        background-color: var(--quaternary-color);
+        border-radius: 5px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        font-size: 1.125rem;
+
+        p {
+            font-family: "Fugaz One", "Poppins", sans-serif;
+            font-size: 1.35rem;
+        }
+
+        p:last-of-type {
+            padding-top: 30px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+
+            a {
+                font-family: "Rochester", "Poppins", sans-serif;
+                font-style: italic;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        margin: 1.2rem;
+
+        h1 {
+            font-size: 2rem;
+
+            img {
+                max-width: 40px;
+                top: 8px;
+            }
+        }
+    }
+}
+

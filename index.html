@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Jialuo Hu,software engineer,coding,portfolio,programmer"
+          name="keywords">
+    <link href="res/favicon.png" rel="icon" type="image/png">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <title>Portfolio-Jialuo Hu</title>
+</head>
+
+<body>
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <span class="theme-icon">
+        <i class="fa-regular fa-moon"></i>
+    </span>
+</button>
+<div class="wrapper">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                Jialuo Hu
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About Me</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="res/sample.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Intro part -->
+        <section class="introduction" id="introduction">
+            <article>
+                <!-- Random picture -->
+                <img alt="Profile Photo" class="profile-photo"
+                     src="res/profile-img.jpg">
+                <div class="intro">
+                    <h3>Hello, I'm Jialuo Hu <img alt="Hand Wave"
+                                                  src="res/hello.svg"></h3>
+                    <div class="intro-text">
+                        <p>
+                            I build <em>reliable high-performance</em> software.
+                        </p>
+                    </div>
+                    <div class="intro-icons">
+                        <a href="https://github.com/jialuohu">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jialuohu">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                        <a href="mailto:jih146@ucsd.edu">
+                            <i class="fa-solid fa-envelope fa-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hu_frame">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3>I know <span>things</span> below: </h3>
+                    <ul>
+                        <li>
+                            <img alt="Golang Programming Language"
+                                 src="res/skills/go-icon-48.png">
+                            Golang
+                        </li>
+                        <li>
+                            <img alt="C++ Programming Language"
+                                 src="res/skills/cpp-icon-48.png">
+                            C++
+                        </li>
+                        <li>
+                            <img alt="C Programming Language"
+                                 src="res/skills/c-icon-48.png">
+                            C Language
+                        </li>
+                        <li>
+                            <img alt="Rust Programming Language"
+                                 src="res/skills/rust-icon-48.png">
+                            Rust
+                        </li>
+                        <li>
+                            <img alt="Python Programming Language"
+                                 src="res/skills/python-icon-48.png">
+                            Python
+                        </li>
+                        <li>
+                            <img alt="Javascript Programming Language"
+                                 src="res/skills/js-icon-48.png">
+                            Javascript
+                        </li>
+                        <li>
+                            <img alt="HTML Programming Language"
+                                 src="res/skills/html-icon-48.png">
+                            HTML
+                        </li>
+                        <li>
+                            <img alt="CSS Programming Language"
+                                 src="res/skills/css-icon-48.png">
+                            CSS
+                        </li>
+                        <li>
+                            <img alt="Linux Logo"
+                                 src="res/skills/linux-icon-48.png">
+                            Linux
+                        </li>
+                        <li>
+                            <img alt="Docker Logo"
+                                 src="res/skills/docker-icon-48.png">
+                            Docker
+                        </li>
+                        <li>
+                            <img alt="K8S Logo"
+                                 src="res/skills/k8s-icon-48.png">
+                            Kubernetes
+                        </li>
+                        <li>
+                            <img alt="AWS Logo"
+                                 src="res/skills/aws-icon-48.png">
+                            AWS
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- Scroll -->
+            <a class="scroll-btn" href="#projects-experiences">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-chevron-down fa-2xl"></i>
+            </a>
+        </section>
+
+        <!-- SPA Switch -->
+        <section class="content-showcase" id="content-showcase">
+            <nav class="showcase-tabs">
+                <button class="tab-btn active" data-view="about">About</button>
+                <button class="tab-btn" data-view="skills">Skills</button>
+                <button class="tab-btn" data-view="facts">Quick Facts</button>
+            </nav>
+            <div class="showcase-content">
+                <!-- About -->
+                <div class="view-panel active" id="view-about">
+                    <h2>About Me</h2>
+                    <p>I'm a Master's student in Computer Science at UC San Diego, specializing in distributed systems, high-performance computing, and system programming. With expertise in Golang, C++, Rust, and Python, I focus on building reliable, scalable software systems.</p>
+                    <p>My experience spans research roles at UCI's TrussLab and STAR Lab, as well as industry work as a Network Engineer at ComeLife Intelligent Technology.</p>
+                </div>
+
+                <!-- Skills -->
+                <div class="view-panel" id="view-skills">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Golang</li>
+                                <li>C/C++</li>
+                                <li>Rust</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Systems</h3>
+                            <ul>
+                                <li>Distributed Systems</li>
+                                <li>Operating Systems</li>
+                                <li>Databases</li>
+                                <li>Computer Networks</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>AWS</li>
+                                <li>Linux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick facts -->
+                <div class="view-panel" id="view-facts">
+                    <h2>Quick Facts</h2>
+                    <ul class="facts-list">
+                        <li><strong>Education:</strong> Master's in Computer Science @ UC San Diego</li>
+                        <li><strong>Focus Areas:</strong> Distributed Systems, HPC, Databases</li>
+                        <li><strong>Current:</strong> Building fault-tolerant distributed systems</li>
+                        <li><strong>Research:</strong> Published at IDC '23 (10.1145/3585088.3593887)</li>
+                        <li><strong>Hobbies:</strong> Photography (@hu_frame on Instagram)</li>
+                        <li><strong>Mission:</strong> Building reliable software systems at scale</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proj & Exp Part -->
+        <section class="projects-experiences" id="projects-experiences">
+            <!-- Proj -->
+            <article class="projects">
+                <header>
+                    <h3>Featured Projects</h3>
+                    <a href="pages/projects.html">View More
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </header>
+                <ol>
+                    <li>
+                        <a href="pages/projects.html#project1">
+                            <h3>Raft Consensus Core</h3>
+                            <p>
+                                Built a durable and fault-tolerant distributed
+                                consensus library in Go by implementing the Raft
+                                algorithm with gRPC communication and a
+                                persistent, snapshot-capable state machine using
+                                Pebble.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/projects.html#project2">
+                            <h3>Distributed Key-Value Store</h3>
+                            <p>
+                                Implemented a fault-tolerant, Rust-based
+                                key-value store featuring a gRPC control plane
+                                with Lamport-clock convergence for zero-touch
+                                failover and a quorum-based WAL for data
+                                consistency.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/projects.html#project3">
+                            <h3>DB Management Kernel</h3>
+                            <p>
+                                Developed a high-performance C++ database kernel
+                                from scratch, implementing a paged file manager,
+                                a B+ tree indexing layer, and an iterator-based
+                                query engine to efficiently process SQL.
+                            </p>
+                        </a>
+                    </li>
+                </ol>
+            </article>
+
+            <!-- Exp -->
+            <article class="experiences">
+                <header>
+                    <h3>Selected Experiences</h3>
+                </header>
+                <ol>
+                    <li>
+                        <img alt="Logo of Comelife"
+                             src="res/comelife-logo.png">
+                        <div>
+                            <span><b>Network Engineer Intern</b> | ComeLife Intelligent Technology Co.</span>
+                            <span>
+                                <time datetime="2024-06">Jun 2024</time> - <time
+                                    datetime="2024-8">Aug 2024</time>
+                            </span>
+                            <p>
+                                Spearheaded the design and
+                                implementation of a robust network
+                                infrastructure for the research
+                                department, integrating Collapsed Core
+                                Architecture to optimize data management
+                                and scalability.
+                                Configured VPN (L2TP), Link Aggregation
+                                (LACP) to enhance connectivity,
+                                security, and
+                                load balancing.
+                                Implemented VLAN segmentation to enhance
+                                network security and performance,
+                                enabling
+                                efficient data traffic management across
+                                the
+                                research department of company.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="Logo of UCI ICS"
+                             src="res/uci-ics-logo.png">
+                        <div>
+                            <span><b>Research Assistant</b> | UCI TrussLab</span>
+                            <span>
+                                <time datetime="2023-06">Jun 2023</time> - <time
+                                    datetime="2023-12">Dec 2023</time>
+                            </span>
+                            <p>
+                                Contributed to the 5G Core security system
+                                project under Professor Ardalan Amiri Sani in
+                                Trustworthy Systems Lab (TrussLab).
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img alt="UCI ICS"
+                             src="res/uci-ics-logo.png">
+                        <div>
+                            <span><b>Research Assistant</b> | UCI STAR Lab</span>
+                            <span>
+                                <time datetime="2022-11">Nov 2022</time> - <time
+                                    datetime="2023-6">Jun 2023</time>
+                            </span>
+                            <p>
+                                Participated in a research project, at UCI STAR
+                                Lab led by Professor Gillian Hayes, that
+                                involves interviewing and co-designing with
+                                noise-sensitive individuals to develop an
+                                assistive application, aimed at improving their
+                                well-being and reducing stress, and contributing
+                                to the presentation of findings and
+                                recommendations. Publication: <a
+                                    href="https://dl.acm.org/doi/10.1145/3585088.3593887"
+                                    target="_blank">IDC
+                                '23
+                                Pages
+                                522–526 DOI: 10.1145/3585088.3593887</a>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </article>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <section class="contact">
+            <h2>Shall<span class="break">We?</span></h2>
+            <div class="form-wrapper">
+                <p>I'm on a mission to build reliable software system. Want to
+                    talk
+                    about it?
+                </p>
+                <div class="buttons">
+                    <a class="mail-btn" href="mailto:jih146@ucsd.edu"><span>Email
+                        Me!</span></a>
+                    <a href="https://www.linkedin.com/in/jialuohu"
+                       target="_blank">
+                        <img alt="Link to my LinkedIn profile"
+                             src="res/linkedin.png">
+                    </a>
+                    <a href="https://www.instagram.com/hu_frame"
+                       target="_blank">
+                        <img alt="Link to my instagram profile"
+                             src="res/ig.png">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <span>&copy;Copyright 2025 Jialuo Hu</span>
+        </section>
+    </footer>
+
+</div>
+
+<noscript>
+    <div>
+        <strong>This website requires JavaScript to be enabled.</strong>
+        <p>Please enable JavaScript in your browser settings to continue.</p>
+    </div>
+</noscript>
+<script src="js/theme-toggle.js"></script>
+<script src="js/spa-switch.js"></script>
+</body>
+
+</html>

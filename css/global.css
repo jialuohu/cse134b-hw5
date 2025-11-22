@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
+:root {
+    --primary-color: #89A8B2;
+    --secondary-color: #B3C8CF;
+    --tertiary-color: #E5E1DA;
+    --quaternary-color: #F1F0E8;
+    --quinary-color: #16476A;
+    --quinary-color-p3: color(display-p3 0.2 0.7 1);
+
+    --layout-gap-size: 4rem;
+    --layout-max-width: 1280px;
+
+    /* header */
+    --header-padding-size: 1rem;
+    --header-background-color: var(--primary-color);
+    --header-shadow-size: 10px;
+    --header-shadow-color: rgba(0, 0, 0, 0.5);
+    --header-z-index: 1;
+
+    --nav-text-color: black;
+    --nav-background-color: var(--secondary-color);
+    --nav-gap-size: 1rem;
+    --nav-font-size: 1.125rem;
+    --nav-shadow-size: 8px;
+    --nav-shadow-color: rgba(0, 0, 0, 0.4);
+
+    --logo-font-size: 3rem;
+    --logo-shadow-size: 8px;
+    --logo-shadow-color: rgba(0, 0, 0, 0.8);
+
+    /* content */
+    --main-text-color: black;
+    --main-background-color: #f4f4f4;
+    --main-intro-card-gap-size: 30px;
+    --main-intro-background-color: var(--quaternary-color);
+    --main-intro-card-shadow-size: 8px;
+    --main-intro-card-shadow-color: rgba(0, 0, 0, 0.5);
+    --main-intro-card-icon-background-color: var(--secondary-color);
+
+    --main-projects-experiences-card-background-color: var(--secondary-color);
+
+    /* footer */
+    --footer-gap-size: 1.25rem;
+
+    --footer-contact-text-color: var(--primary-color);
+    --footer-contact-background-color: var(--quinary-color);
+    --footer-contact-gap-size: 2rem;
+    --footer-contact-button-shadow-size: 8px;
+    --footer-contact-button-shadow-color: rgba(0, 0, 0, 0.8);
+
+    --footer-buttons-gap-size: 1.5rem;
+
+    --footer-copyright-text-color: black;
+    --footer-copyright-font-weight: 600;
+    --footer-copyright-font-size: 1.2rem;
+    --footer-copyright-padding-size: 8px;
+    --footer-copyright-background-color: var(--primary-color);
+    --footer-copyright-shadow-size: 10px;
+    --footer-copyright-shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --tertiary-color: #3d566e;
+    --quaternary-color: #2c3e50;
+    --quinary-color: #1abc9c;
+
+    --main-text-color: #ecf0f1;
+    --main-background-color: #1a252f;
+    --main-intro-background-color: #2c3e50;
+    --main-intro-card-icon-background-color: #34495e;
+    --main-projects-experiences-card-background-color: #34495e;
+
+    --header-background-color: #2c3e50;
+    --header-shadow-color: rgba(0, 0, 0, 0.8);
+
+    --nav-text-color: #ecf0f1;
+    --nav-background-color: #34495e;
+    --nav-shadow-color: rgba(0, 0, 0, 0.6);
+
+    --logo-shadow-color: rgba(0, 0, 0, 1);
+
+    --footer-contact-text-color: #1abc9c;
+    --footer-contact-background-color: #16213e;
+    --footer-contact-button-shadow-color: rgba(0, 0, 0, 1);
+
+    --footer-copyright-text-color: #ecf0f1;
+    --footer-copyright-background-color: #2c3e50;
+    --footer-copyright-shadow-color: rgba(0, 0, 0, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--main-background-color);
+    line-height: 1.6;
+    color: var(--main-text-color);
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
