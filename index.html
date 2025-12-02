@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Jialuo Hu,software engineer,coding,portfolio,programmer"
-          name="keywords">
+    <meta content="Jialuo Hu,software engineer,coding,portfolio,programmer" name="keywords">
     <link href="res/favicon.png" rel="icon" type="image/png">
     <link href="css/layout.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
-    <link crossorigin="anonymous"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
     <title>Portfolio-Jialuo Hu</title>
 </head>
 
@@ -262,13 +260,11 @@
                 </header>
                 <ol>
                     <li>
-                        <img alt="Logo of Comelife"
-                             src="res/comelife-logo.png">
+                        <img alt="Logo of Comelife" src="res/comelife-logo.png">
                         <div>
                             <span><b>Network Engineer Intern</b> | ComeLife Intelligent Technology Co.</span>
                             <span>
-                                <time datetime="2024-06">Jun 2024</time> - <time
-                                    datetime="2024-8">Aug 2024</time>
+                                <time datetime="2024-06">Jun 2024</time> - <time datetime="2024-8">Aug 2024</time>
                             </span>
                             <p>
                                 Spearheaded the design and
@@ -291,13 +287,11 @@
                         </div>
                     </li>
                     <li>
-                        <img alt="Logo of UCI ICS"
-                             src="res/uci-ics-logo.png">
+                        <img alt="Logo of UCI ICS" src="res/uci-ics-logo.png">
                         <div>
                             <span><b>Research Assistant</b> | UCI TrussLab</span>
                             <span>
-                                <time datetime="2023-06">Jun 2023</time> - <time
-                                    datetime="2023-12">Dec 2023</time>
+                                <time datetime="2023-06">Jun 2023</time> - <time datetime="2023-12">Dec 2023</time>
                             </span>
                             <p>
                                 Contributed to the 5G Core security system
@@ -307,13 +301,11 @@
                         </div>
                     </li>
                     <li>
-                        <img alt="UCI ICS"
-                             src="res/uci-ics-logo.png">
+                        <img alt="UCI ICS" src="res/uci-ics-logo.png">
                         <div>
                             <span><b>Research Assistant</b> | UCI STAR Lab</span>
                             <span>
-                                <time datetime="2022-11">Nov 2022</time> - <time
-                                    datetime="2023-6">Jun 2023</time>
+                                <time datetime="2022-11">Nov 2022</time> - <time datetime="2023-6">Jun 2023</time>
                             </span>
                             <p>
                                 Participated in a research project, at UCI STAR
@@ -324,19 +316,39 @@
                                 well-being and reducing stress, and contributing
                                 to the presentation of findings and
                                 recommendations. Publication: <a
-                                    href="https://dl.acm.org/doi/10.1145/3585088.3593887"
-                                    target="_blank">IDC
-                                '23
-                                Pages
-                                522–526 DOI: 10.1145/3585088.3593887</a>
+                                    href="https://dl.acm.org/doi/10.1145/3585088.3593887" target="_blank">IDC
+                                    '23
+                                    Pages
+                                    522–526 DOI: 10.1145/3585088.3593887</a>
                             </p>
                         </div>
                     </li>
                 </ol>
             </article>
         </section>
+
+        <!-- Custom Element Showcase -->
+        <section class="custom-element-showcase" id="custom-element-showcase">
+            <header>
+                <h2>Project Cards</h2>
+                <div class="data-controls">
+                    <button id="load-local-btn" class="data-btn">
+                        <i class="fa-solid fa-hard-drive"></i> Load Local
+                    </button>
+                    <button id="load-remote-btn" class="data-btn">
+                        <i class="fa-solid fa-cloud"></i> Load Remote
+                    </button>
+                </div>
+                <div id="load-status" class="load-status"></div>
+            </header>
+            <div class="project-card-grid">
+                <!-- Project cards will be dynamically loaded here -->
+            </div>
+        </section>
     </main>
 
+    <script src="js/project-card.js"></script>
+    <script src="js/project-data-loader.js"></script>
 
     <footer class="footer">
         <section class="contact">
@@ -348,16 +360,12 @@
                 </p>
                 <div class="buttons">
                     <a class="mail-btn" href="mailto:jih146@ucsd.edu"><span>Email
-                        Me!</span></a>
-                    <a href="https://www.linkedin.com/in/jialuohu"
-                       target="_blank">
-                        <img alt="Link to my LinkedIn profile"
-                             src="res/linkedin.png">
+                            Me!</span></a>
+                    <a href="https://www.linkedin.com/in/jialuohu" target="_blank">
+                        <img alt="Link to my LinkedIn profile" src="res/linkedin.png">
                     </a>
-                    <a href="https://www.instagram.com/hu_frame"
-                       target="_blank">
-                        <img alt="Link to my instagram profile"
-                             src="res/ig.png">
+                    <a href="https://www.instagram.com/hu_frame" target="_blank">
+                        <img alt="Link to my instagram profile" src="res/ig.png">
                     </a>
                 </div>
             </div>
@@ -366,7 +374,6 @@
             <span>&copy;Copyright 2025 Jialuo Hu</span>
         </section>
     </footer>
-
 </div>
 
 <noscript>
